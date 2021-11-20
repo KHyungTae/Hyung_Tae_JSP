@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Basic</title>
+</head>
+<body>
+	<!-- controls 설정되면 소리 조절(volume), 동영상 탐색(seek), 일시 정지(pause)/재시작(resume)을 할 수 있는 컨트롤러를 제공합니다. -->
+    <video controls="controls">
+    <!-- 각 브라우저마다 탑재된 코덱이 다르기 때문에 재생할 수 있는 비디오 종류가 차이가 난다. 
+         이럴때 비디오 태그안에 <source>태그를 이요하여 하나의 비디오 소스에 대해 여러가지 파일형식을 동시에 제공.
+         type속성이란 인터넷에서 멀티미디어 전송을 위한 규약을 의미하며 각 확장자의 음원 형식을 뜻한다. -->
+        <source src="Wildlife.mp4" type="video/mp4" />
+        <source src="Wildlife.webm" type="video/webm" />
+    </video>
+</body>
+</html>

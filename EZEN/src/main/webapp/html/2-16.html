@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Basic</title>
+</head>
+<body>
+    <table border="1">
+        <caption>Caption</caption>  <!-- 테이블에 제목을 생성하는 태그(태그 뒤, <tr><td> 태그 전에 사용해야됨) -->
+        <colgroup>  <!-- 2개 이상 열의 스타일 지정 -->
+            <col span="2" style="background: red" />  <!-- 한 열의 모든 셀에 같은 스타일 지정 -->
+            <col style="background: blue" />
+        </colgroup>
+        <thead style="background: green" >  <!-- 헤더 -->
+            <tr>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+            </tr>
+        </thead>
+        <tbody>  <!-- 본문 -->
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        </tbody>
+        <tfoot style="background: yellow" >  <!-- 요약 ex: 합계, 총액 등 -->
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

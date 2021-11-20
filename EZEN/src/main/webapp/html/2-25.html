@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Basic</title>
+</head>
+<body>
+    <audio controls="controls">
+    <!-- 각 브라우저마다 탑재된 코덱이 다르기 때문에 재생할 수 있는 오디오 종류가 차이가 난다. 
+         이럴때 오디오 태그안에 <source>태그를 이요하여 하나의 오디오 소스에 대해 여러가지 파일형식을 동시에 제공.
+         type속성이란 인터넷에서 멀티미디어 전송을 위한 규약을 의미하며 각 확장자의 음원 형식을 뜻한다. -->
+        <source src="Kalimba.mp3" type="audio/mp3" />
+        <source src="Kalimba.ogg" type="audio/ogg" />
+    </audio>
+</body>
+</html>

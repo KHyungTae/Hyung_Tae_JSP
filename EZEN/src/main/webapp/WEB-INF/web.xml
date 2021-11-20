@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>EZEN</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+    <servlet-name>now</servlet-name>
+    <servlet-class>ez.NowServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>now</servlet-name>
+    <url-pattern>/now</url-pattern>
+  </servlet-mapping>
+  
+  
+  <context-param>
+  	<description>로깅 여부</description>
+  	<param-name>logEnabled</param-name>
+  	<param-value>true</param-value>
+  </context-param>
+  
+  <context-param>
+  	<description>디버깅 레벨</description>
+  	<param-name>debugLevel</param-name>
+  	<param-value>5</param-value>
+  </context-param>
+  
+  
+  <jsp-config>
+  	<jsp-property-group>
+  		<url-pattern>/nov05/view/*</url-pattern>
+  		<include-prelude>/nov05/common/variable.jspf</include-prelude>
+  		<include-coda>/nov05/common/footer.jspf</include-coda>
+  	</jsp-property-group>
+  </jsp-config>
+  
+  
+  <error-page>
+  		<error-code>404</error-code>
+  		<location>/nov09/error/error404.jsp</location>
+  </error-page>
+  
+  <error-page>
+  		<error-code>500</error-code>
+  		<location>/nov09/error/error500.jsp</location>
+  </error-page>
+  
+  
+  <error-page>
+  		<exception-type>java.lang.NullPointerException</exception-type>
+  		<location>/nov09/error/errorNullPointer.jsp</location>
+  </error-page>
+  
+  
+  <!-- <session-config>
+  			<session-timeout>50</session-timeout>  세션 타임아웃 50분으로 지정 (50분후 자동 세션 종료)
+  	   </session-config> -->
+  
+
+
+</web-app>
